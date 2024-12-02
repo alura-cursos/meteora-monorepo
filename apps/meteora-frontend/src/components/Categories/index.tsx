@@ -3,12 +3,7 @@ import { Category } from "../Category";
 import { Heading } from "../Heading";
 import { CategoryList, Container } from "./styles";
 import { GET_CATEGORIES } from "../../graphql/queries/categories";
-
-interface ICategory {
-    id: number
-    displayName: string
-    icon: string
-}
+import { Category as ICategory } from '@graphql-types/generated-types';
 
 export const Categories = () => {
 

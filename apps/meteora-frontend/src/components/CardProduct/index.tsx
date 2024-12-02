@@ -1,14 +1,9 @@
+import { Product } from "@graphql-types/generated-types"
 import { Button } from "../Button"
 import { Card, CardImage, CardContent, CardFooter, CardBody } from "./styles"
 
 interface CardProductInterface {
-    product: {
-        id: number;
-        name: string;
-        description: string;
-        price: number;
-        image: string;
-    }
+    product: Product
 }
 
 export const CardProduct = ({ product }: CardProductInterface) => {
